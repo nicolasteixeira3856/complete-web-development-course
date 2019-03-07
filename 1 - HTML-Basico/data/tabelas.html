@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Aula Tabelas</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+        <h1>Aula16</h1><br>
+        Aula básica sobre tabelas<hr><br>
+        
+        <table border="1">
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td>R$ 2.500,99</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Tablet</td>
+                <td>R$ 499</td>
+            </tr>
+        </table>
+        <br>
+        <h1>Aula17</h1>
+        Mais atributos de tabelas<hr><br>
+        
+        <table border="1" width="100%">
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td><a href="#">Notebook</a</td>
+                    <td>R$ 2.500,99</td>
+                    <td><img src="../img/ferrari.jpg" alt="iamgem" width="200"></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td><a href="#">Tablet</a></td>
+                    <td>R$ 499</td>
+                    <td><img src="../img/ferrari.jpg" alt="iamgem" width="200"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Desconto aplicado</td>
+                    <td colspan="3">Cupom1 -R$20</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Cupom2 -R$80</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td colspan="3">R$ 2899,99</td>
+                </tr>
+            </table>
+
+	</body>
+</html>

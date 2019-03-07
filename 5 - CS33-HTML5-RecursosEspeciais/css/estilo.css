@@ -1,0 +1,157 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    box-sizing: border-box;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /*-webkit-border-radius: 20px 90px;
+    -moz-border-radius: 20px 90px;
+    border-radius: 20px 90px;*/
+}
+
+.arredondamento{
+    border-radius: 150px;
+}
+
+/*Aula de Degrades*/
+
+#caixa-degrade{
+    width: 300px;
+    height: 300px;
+    /*background: url(../img/camera.png);*/
+    background: linear-gradient(90deg /* Definindo a curvatura do gradient em graus, to left, to right, to bottom etc*/, red, yellow, green);
+    /*background: radial-gradient(red, yellow, green)*/
+}
+
+/* Aula de sombras */
+
+#caixa-sombra{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 5px;
+    background: #009670;
+    color: white;
+    box-shadow: 15px 15px 5px 4px rgba(0, 0, 0, 0.5) ;
+}
+
+#caixa-sombra h1{
+    color: white;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5) ;
+}
+
+/* Aula de animação */
+
+@-webkit-keyframes caixaanimacao{
+    from{/*Estado inicial*/
+        background: red;
+    }
+    to{/* Estado final */
+        background: green;
+    }
+}
+
+@-moz-keyframes caixaanimacao{
+    from{/*Estado inicial*/
+        background: red;
+    }
+    to{/* Estado final */
+        background: green;
+    }
+}
+
+@-o-keyframes caixaanimacao{
+    from{/*Estado inicial*/
+        background: red;
+    }
+    to{/* Estado final */
+        background: green;
+    }
+}
+
+@keyframes caixaanimacao{
+    from{/*Estado inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to{/* Estado final */
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixa-animacao{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /*animation-name: caixaanimacao;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;*/
+
+    -webkit-animation: caixaanimacao 5s 1s 2 alternate;
+    -moz-animation: caixaanimacao 5s 1s 2 alternate;
+    -o-animation: caixaanimacao 5s 1s 2 alternate;
+    animation: caixaanimacao 5s 1s 2 alternate;
+}
+
+/* Aula de transições */
+
+#caixa-transicoes{
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+
+#caixa-transicoes:hover{
+    width: 400px;
+    background:yellow;
+    /*transition: width 2s, background 2s;*/
+    transition: all 2s;
+}
+
+/* Tags html 5 */
+
+header{
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+nav{
+    border: 1px solid blue;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+footer{
+    background: #ccc;
+}
+
+article{
+    background: orange;
+    padding: 10px;
+}
+
+section{
+    border: 1px dotted #fff;
+}
+
+aside{
+    background: blue;
+    color: white;
+}
+
+#form{
+    width: 250px;
+    padding: 10px;
+    background: yellowgreen;
+}

@@ -1,0 +1,181 @@
+/* Box model
+
+.conteudo{
+    border: 1px solid red;
+    padding:20px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin: 10px;
+}
+*/
+/* Margin collapse, quando possuimos dois elementos um a baixo do outro ambos com margens diferentes, a margem maior será a aplicada */
+/* Noticia box model */ 
+
+#noticia-box-model{
+    background:#cccccc;
+    padding: 10px;
+    width: 40%;
+    border: 5px solid #808080;
+}
+
+.h1-box-model{
+
+    margin: 0px;
+}
+
+/* Elementos flutuantes */
+
+.conteudo-elementos-flu{
+    background: blue;
+    border: 1px solid gray;
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.conteudo-elementos-flu-1{
+    background: red;
+    border: 5px solid gray;
+    width: 200px;
+    height: 200px;
+}
+
+.clear-elementos-flu{
+    clear: both; /* right, none, both */
+}
+
+#principal-elementos-flu{
+    border: 1px solid red;
+    background: green;
+}
+
+/* Elementos flutuantes na prática */
+
+#body-elementos-flu-pratica{
+    width: 920px;
+}
+
+.galeria-fotos-elementos-flu-pratica{
+    background: white;
+    border: 5px solid #cccccc;
+    padding: 5px;
+    width: 260px;
+    float: left;
+    margin: 10px;
+}
+
+.noticia-elementos-flu-pratica{
+    background: #e5e5e5;
+    width: 280px;
+    padding: 5px;
+    margin: 8.3px;
+    float: left;
+}
+
+/* Elementos inline, block e inline-block*/
+
+/* Display: inline-block; - Só pula para outra linha quando o conteúdo não cabe mais */
+
+.h1-h2-inline{
+    border: 1px solid red;
+    display: inline;
+}
+
+.span-block{
+    border: 1px solid red;
+    display: block;
+}
+
+/* Posicionamento estático/relativo */
+
+#body-pos{
+    background: #0059b3;
+    
+}
+
+#container-pos{
+    background: #ffffff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.h1-pos{
+    position: static;
+}
+
+.p-pos{
+    position: static;
+    width: 350px;
+    border: 1px solid red;
+}
+
+.p-relative{
+    position: relative;
+    border: 1px solid red;
+    width: 350px;
+    /* top right bottom left */
+    top: 10px;
+    left: 80px;
+}
+
+.p-absolute{
+    position: absolute;
+    border: 1px solid red;
+    background: #f2f2f2;
+    width: 350px;
+    top: 0px;
+    right: 20px;
+}
+
+.p-fixed{
+    position: fixed;
+    border: 1px solid red;
+    background: #f2f2f2;
+    width: 350px;
+    top: 0px;
+    right: 0px;
+}
+
+/* Sobrepondo elementos */
+
+.conteudo1-sob-ele{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.conteudo2-sob-ele{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 2;
+}
+
+.conteudo3-sob-ele{
+    border: 1px solid red;
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    z-index: 3;
+}
+
+/* formatando links está em css interno da página formatando-links.html apenas por necessidade da aula*/

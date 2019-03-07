@@ -1,0 +1,418 @@
+/* Navegação vertical */
+#navegacao-vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao-vertical a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url('../img/menu.png');
+}
+
+#navegacao-vertical a:hover /*, .selecionado a - Forma mais tradicional de exibir a página que o usuário está no momento */ {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#home #navegacao-vertical .home a,
+#sobre #navegacao-vertical .sobre a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#navegacao-vertical{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegação Horizontal */
+
+#navegacao-horizontal{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 720px;
+    background: #159cb0 url("../img/fundo-horizontal.png") repeat-x;
+    float: left;
+}
+
+#navegacao-horizontal li{
+    float: left;
+}
+
+#navegacao-horizontal a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url("../img/divisor.png") repeat-y;
+}
+#navegacao-horizontal .primeiro a{
+    background: none;
+}
+
+
+#navegacao-horizontal a:hover /*, .selecionado a - Forma mais tradicional de exibir a página que o usuário está no momento */ {
+    color: #085662;
+    background: #44cade
+}
+
+#home-h #navegacao-horizontal .home a,
+#sobre-h #navegacao-horizontal .sobre a{
+    color: #085662;
+    background: #44cade
+}
+
+/* Navegação com Abas */
+
+#navegacao-abas{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+#navegacao-abas li{
+   float: left;
+   background: url("../img/aba-direita.png") no-repeat top right;
+}
+
+#navegacao-abas a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url("../img/aba-esquerda.png") no-repeat top left;
+    color: white;
+}
+
+#navegacao-abas a:hover /*, .selecionado a - Forma mais tradicional de exibir a página que o usuário está no momento */ {
+   color: #894a1f;
+}
+
+#navegacao-abas #atual{
+    background: url("../img/aba-direita-atual.png") no-repeat top right;
+}
+
+#navegacao-abas #atual a{
+    background: url("../img/aba-esquerda-atual.png") no-repeat top left;
+}
+
+/* Layout de largura fixa */
+#body-lf{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#container-lf{
+    width: 720px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#marca-lf{
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo-lf{
+    width: 520px;
+    float: right;
+}
+
+#conteudo-lf-principal{
+    width: 320px;
+    float: left;
+}
+
+#conteudo-lf-secundario{
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-lf-secundario h1,
+#conteudo-lf-secundario h2,
+#conteudo-lf-secundario h2,
+#conteudo-lf-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao-lf{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao-lf li{
+    list-style-type: none;
+}
+
+#navegacao-lf a{
+    text-decoration: none;
+}
+
+#rodape-lf{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Layout Liquido */
+
+#body-lq{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*background: #f2f2f2;*/
+}
+
+#container-lq{
+    width: 1080px;
+    margin: 0 auto;
+    background: #ffffff url("../img/coluna.png") repeat-y left top; /* Coluna falsa */
+    min-width: 820px;
+    max-width: 1480px;
+}
+
+#marca-lq{
+    height: 250px;
+    background: #225992 url("../img/cabecalho2.jpg") no-repeat center;
+    text-align: center;
+    line-height: 250px;
+}
+
+#conteudo-lq{
+    width: 75%;
+    float: right;
+}
+
+#conteudo-lq-principal{
+    width: 64%;
+    float: left;
+}
+
+#conteudo-lq-secundario{
+    width: 33%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-lq-secundario h1,
+#conteudo-lq-secundario h2,
+#conteudo-lq-secundario h2,
+#conteudo-lq-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao-lq{
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navegacao-lq li{
+    list-style-type: none;
+}
+
+#navegacao-lq a{
+    text-decoration: none;
+}
+
+#rodape-lq{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Imagens liquidas */
+
+/*#imagem-lq{
+    border: 1px solid red;
+    width: 90%;
+    overflow: hidden;
+}*/
+
+img.img-noticia{
+    width: 100%;
+    max-width: 600px;
+}
+
+/*Estilizando tabelas*/
+
+#body-tabelas{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#table-stl{
+    width: 600px;
+    border-collapse: separate; /* collapse */
+}
+
+#table-stl th{
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+#table-stl th,td{
+    padding: 5px;
+}
+
+#table-stl tr:hover{
+    background-color: #c3e6e5;
+}
+
+tr.alterna{
+    background-color: #efefef;
+}
+
+.numero{
+    text-align: right !important;
+}
+
+/* estilizando formularios */
+
+#body-formularios{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#control-form{
+    margin: 0 auto;
+}
+
+fieldset{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+
+input{ /* [type="text"] */
+    width: 20em;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+
+/* Mais sobre formulários */
+
+#body-formularios-login{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #333;
+}
+
+#container{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top:120px;
+    text-align: center;
+}
+
+#container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email{
+    background-image: url(../img/icone-usuario.png);
+}
+
+input.senha{
+    background-image: url(../img/icone-cadeado.png);
+}
+
+input.submit{
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    width: 90%;
+    padding: 5px 20px;
+    height: 45px;
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+/* Arredondamento com imagens */
+
+#body-imagens{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.caixa{
+    width: 400px;
+    background: #dedede url(../img/fundo-arredondamento.png) repeat-y;
+   
+}
+
+.caixa h2{
+    padding: 10px 20px 0 20px;
+    background: url(../img/topo2.png) no-repeat left top;
+}
+
+.caixa p{
+    padding: 0 20px;
+}
+
+.caixa .ultimo{
+    padding-bottom: 20px;
+    background: url(../img/baixo2.png) no-repeat left bottom;
+}
