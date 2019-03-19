@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Desafio A, B e C</title>
+    </head>
+    <body>
+        <script>
+            var a = 10
+            var b = 20 //10
+            var c = null //20
+
+            document.write("O valor da variável A é: " + a + ", o valor da variável B é: " + b + "e o valor da variável C é: " + c + ".")
+
+            c = a
+            console.log(c)
+            a = b
+            console.log(c)
+            b = c
+            console.log(c)
+            c = null
+            console.log(c)
+
+            document.write("<br><br>(Pós inversão) O valor da variável A é: " + a + ", o valor da variável B é: " + b + " e o valor da variável C é: " + c + ".")
+            
+        </script>
+    </body>
+</html>
