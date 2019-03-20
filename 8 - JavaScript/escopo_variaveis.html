@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Escopo de variáveis</title>
+    </head>
+    <body>
+        <script>
+            //3 escopos: global, função e bloco <- variáveis declaradas dentro de escopo de bloco sofrem elevação para global, já variáveis de função não
+
+            var serie = "Friends"
+
+            //Escopo de bloco
+            if (true){
+                var serie2 = "Game of Thrones" // Eleva para global
+                document.write(serie)
+            }
+
+            document.write("<br>")
+            document.write(serie2)
+            document.write("<br>")
+
+            function x(){
+                var serie3 = "The Walking Dead"
+                
+                document.write(serie1)
+                document.write("<br>")
+                document.write(serie2)
+            }
+
+            x()
+
+            document.write("<br>")
+            document.write(serie3)
+
+        </script>
+    </body>
+</html>

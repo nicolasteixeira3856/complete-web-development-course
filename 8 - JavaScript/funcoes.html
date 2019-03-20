@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Funções</title>
+    </head>
+    <body>
+        <script>
+
+
+            //Void ou retorno
+            function calcularAreaTerreno(largura, comprimento){
+
+               var area = largura * comprimento
+
+               return area
+
+            }
+
+            var largura = prompt("Digite a altura do terreno")
+            var comprimento = prompt("Digite o comprimento do terreno")
+
+            largura = parseFloat(largura)
+            comprimento = parseFloat(comprimento)
+
+            var area = calcularAreaTerreno(largura, comprimento);
+
+            document.write('<h3>O terreno possui ' + area + 'm²</h3>')
+
+            function soma(a, b){
+
+                /*Possível tratamento para NaN (not a number)
+                b = b === undefined ? 0 : b*/
+                return a + b
+            }
+
+            console.log(soma(7, 7))
+            console.log(soma(7, 7, 9, 15)) //Desconsidera os parâmetros adicionais
+            console.log(soma(7)) // -< Retornará NaN no console
+            console.log(soma()) // -< Retornará NaN no console
+
+        </script>
+    </body>
+</html>
