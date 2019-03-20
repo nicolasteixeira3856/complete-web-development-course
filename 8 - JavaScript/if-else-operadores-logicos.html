@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Operadores Lógicos</title>
+    </head>
+    <body>
+        <script>
+
+            // && || !
+
+            var nota = prompt("Digite a media do aluno")
+            var faltas = prompt("Digite a quantidade de faltas")
+            var media = 7
+            var faltas_maximas = 15
+
+            if(nota >= media && faltas <= faltas_maximas){
+                document.write("Aprovado")
+            }else{
+                document.write("Reprovado")
+            }
+
+
+            document.write("<hr> Utilizando operador ternário <br><br>")
+            var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+
+            document.write(resultado)
+        </script>
+    </body>
+</html>
