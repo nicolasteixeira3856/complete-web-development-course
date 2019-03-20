@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>If, else e parametros exercicio</title>
+    </head>
+    <body>
+        <script>
+            var nome = prompt("Digite o seu nome")
+            var altura = prompt("Informe sua altura em cm")
+            var peso = prompt("Informe seu peso cm")
+            var imc
+            var classificacao
+
+            /* Convertendo para float */
+
+            altura = parseFloat(altura);
+            peso = parseFloat(peso);
+
+            /* Convertendo cm para m */
+
+            altura = altura / 100
+
+            /* Calculando o imc */
+
+            imc = peso / (altura * altura)
+
+            console.log(altura)
+            console.log(imc)
+
+            /* Estrutura if */
+
+            if (imc < 16){
+                classificacao = "baixo peso muito grave"
+            }else if(imc >= 16 && imc <= 16.99){
+                classificacao = "baixo peso grave"
+            }else if(imc >= 17 && imc <= 18.49){
+                classificacao = "baixo peso"
+            }else if(imc >= 18.50 && imc <= 24.99){
+                classificacao = "peso normal"
+            }else if(imc >= 25 && imc <= 29.99){
+                classificacao = "sobrepeso"
+            }else if(imc >= 30 && imc <= 34.99){
+                classificacao = "obesidade grau I"
+            }else if(imc >= 35 && imc <= 39.99){
+                classificacao = "obesidade grau II"
+            }else{
+                classificacao = "obesidade grau III"
+            }
+
+            document.write(nome + " possui índice de massa corporal igual a " + imc + " , sendo classificado como: " + classificacao)
+
+
+        </script>
+    </body>
+</html>
