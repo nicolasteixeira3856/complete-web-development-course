@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>DOM - Exercicio</title>
+        <style>
+            
+        </style>
+        <script>
+            cor = '#ffff00'
+
+            function mudarCor(){
+                document.getElementById('campo').style.backgroundColor = "yellow"
+            }
+
+            function validar(){
+                var tamanhoString = document.getElementById('campo').value
+                var tamanhoString = tamanhoString.length
+                console.log(tamanhoString)
+                switch(tamanhoString){
+                    case 0:
+                    case 1:
+                    case 2:
+                        document.getElementById('campo').style.backgroundColor = "red"
+                    break;
+                    default:
+                        document.getElementById('campo').style.backgroundColor = "green"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input 
+            id="campo" type="text" onfocusin='mudarCor()'  onfocusout='validar()'
+        >
+    </body>
+</html>
