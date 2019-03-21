@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos com formulários</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <input onblur="console.log('Perdeu o foco')" onfocus="console.log('Recebeu o foco')" type="text" placeholder="Testar no console">
+
+        <select onchange="console.log('Estado foi modificado')">
+            <option>-- Selecione --</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos com mouse</title>
+    </head>
+    <body>
+        <script>
+            function acao(){
+                alert("Evento disparado")
+            }
+            function acao2(){
+                alert("Evento 2 disparado")
+            }
+        </script>
+        <div onclick="acao()" style="background: #ccc; height:150px; width:150px;">On click</div>
+        <br>
+        <div ondblclick="acao()" style="color: white; background: #333; height:150px; width:150px;">On double click</div>
+        <br>
+        <div onmouseup="acao()" style="color:white; background: blue; height:150px; width:150px;">On mouse up</div>
+        <br>
+        <div onmouseover="acao()" style="color: white; background: red; height:150px; width:150px;">On mouse over</div>
+        <br>
+        <div onmouseout="acao()" style="color:white; background: green; height:150px; width:150px;">On mouse out</div>
+        <br>
+        <div onclick="acao()" onmouseout="acao2()" style="color:white; background: yellowgreen; height:150px; width:150px;">On click com on mouse out</div>
+    </body>
+</html>
