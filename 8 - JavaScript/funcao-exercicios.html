@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Função exercicio</title>
+    </head>
+    <body>
+        <script>
+            var num1 = prompt('Digite um número');
+            var operacao = prompt('Digite a operação(soma/subtracao)');
+            var num2 = prompt('Digite outro número');
+
+            function calc(num1, num2, operacao){
+
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                var resultado = 0;
+
+                if(operacao == 'soma'){
+                resultado = num1 + num2;
+                }
+
+                if(operacao == 'subtracao'){
+                resultado = num1 - num2;
+                }
+
+                return resultado;
+            }
+
+            document.write('O resultado é: ' + calc(num1, num2, operacao));
+
+        </script>       
+    </body>
+</html>
