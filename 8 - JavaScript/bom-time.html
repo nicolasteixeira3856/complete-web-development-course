@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>BOM</title>
+    </head>
+    <body>
+        <script>
+            /*setTimeout(function () {
+                document.write("Teste")
+                //Cleartimeout
+            }, 2000)*/
+
+            var i = 25
+
+            setInterval(function () {
+                document.write(i + "<br>")
+                i = i - 1
+                if(i === 0){
+                    window.location.reload()
+                    //Clearinterval
+                }
+            }, 1000)
+
+        </script>
+    </body>
+</html>
