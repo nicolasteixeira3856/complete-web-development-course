@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Tratando erros</title>
+    </head>
+    <body>
+        <script>
+
+            //Netflix
+            var video = Array()
+
+            video[1] = Array()
+            video[1]['nome'] = 'Mahouka Koukou no Rettousei'
+            video[1]['categoria'] = 'Anime'
+
+            function getVideo(video){
+                //Forçando erro
+                try{
+                    console.log(video[0]['nome'])
+                }catch(e){
+                    tratarErro(e)
+                    console.log("Tratar o erro")
+                    //throw new Error("Houve um erro mas não se preocupe, estamos trabalhando nisso")
+                }finally{
+                    console.log("Sempre passa por aqui")
+                }
+            }
+
+            function tratarErro(e){
+                //Lógica para registrar o erro no servidor
+                console.log(e)
+            }
+
+            getVideo(video)
+        </script>
+    </body>
+</html>
