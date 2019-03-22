@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Array - Exercicio</title>
+        <script>
+            var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+            function adicionar(){
+
+                var texto = document.getElementById('texto').value
+                
+                if(texto == ""){
+                    alert("Informe um valor válido")
+                }else if(objetos.indexOf(texto) != -1){
+                    alert("Objeto já foi adicionado")
+                    var texto = document.getElementById('texto').value = ""
+                }else{
+                    objetos.push(texto)
+                    console.log(objetos)
+                    var texto = document.getElementById('texto').value = ""
+                }
+            }
+
+            function ordenar(){
+                console.log(objetos.sort())
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="texto">
+        <button type="button" onclick="adicionar()">Adicionar</button>
+        <button type="button" onclick="ordenar()">Ordernar</button>
+    </body>
+</html>
