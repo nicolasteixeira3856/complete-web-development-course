@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            const SERIE = "Game of Thrones"
+
+            function x () {
+                const SERIE = "The Walking Dead" //Não sofre hoisting
+                console.log("Dentro da função: " + SERIE)
+            }
+
+            x()
+
+            console.log("Escopo Global: " + SERIE)
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            //3 escopos: global, função e bloco
+
+            /*var serie = "Stranger Things" //global
+
+            function x() {
+                var serie = "Game of Thrones"
+                console.log('Função:' + serie)
+                if (true) {
+                    console.log("Bloco dentro da função:" + serie)
+                }  
+            }
+
+            x()
+
+            if (true){
+                console.log("Global:" + serie)
+            }*/
+
+            //Teste com let
+
+            if(true){
+                let serie = 'Friends'
+                console.log(serie)
+            }
+
+            console.log(serie) //Não funcionará pois let não é afetado por hoisting
+        </script>
+
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
