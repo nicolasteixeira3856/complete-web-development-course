@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            class Sofas {
+                contructor(qtd_lugares, reclinavel, cor){
+                    this.qtd_lugares = qtd_lugares
+                    this.reclinavel = reclinavel
+                    this.cor = cor
+                }
+                reclinarSofa(){
+                    if(this.reclinavel === true){
+                        console.log("Reclinou")
+                    }else{
+                        console.log("Sofá não é reclinável")
+                    }
+                }
+            }
+
+            let sofa = new Sofas(3, false, 'Borde')
+            
+            sofa.reclinarSofa()
+
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
