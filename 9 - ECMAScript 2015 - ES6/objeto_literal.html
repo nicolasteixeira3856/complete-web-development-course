@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            class Produto{
+                constructor(descricao, preco){
+                    this.descricao = descricao
+                    this.preco = preco
+                }
+
+                verDescricao(){
+                    console.log(`${this.descricao} por apenas ${this.preco}`)
+                }
+            }
+
+            let produto = new Produto('Notebook', 2200)
+            produto.verDescricao()
+
+            //-------------------------------
+
+            let produtoliteral = {
+                descricao: 'Notebook',
+                preco: 1500,
+                verDescricao: function () {
+                    console.log(`${this.descricao} por apenas ${this.preco}`)
+                }
+            }
+
+            produtoliteral.verDescricao()
+
+            /* --------------------
+                formulário -> servidor
+                    recupera dados e monta um objeto literal
+                        obj literal -> JSON -> HTTP -> Server -> Armazenar
+            */
+
+
+
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
