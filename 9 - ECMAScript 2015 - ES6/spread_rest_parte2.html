@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            //Contexto rest
+
+            function soma(...param) {
+
+                let resultado = 0
+
+                //console.log(param)
+
+                param.forEach(v => resultado += v)
+
+                return resultado
+            }
+
+            console.log(soma(3, 8, 5, 7))
+
+            function multiplicacao(m, ...p){
+               let resultado = 0
+
+               p.forEach(v => resultado += m * v)
+
+               return resultado
+            }
+
+            console.log(multiplicacao(5, 7, 12, 3, 49))
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
