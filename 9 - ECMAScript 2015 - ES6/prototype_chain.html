@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            let animal = {
+                attr1: 'a'
+            }
+
+            let vertebrado = {
+                __proto__: animal,
+                attr2: 'b'
+            }
+
+            let ave = {
+                __proto__: vertebrado,
+                attr3: 'c'
+            }
+
+            console.log(vertebrado.attr1)
+            console.log(ave.attr2)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
