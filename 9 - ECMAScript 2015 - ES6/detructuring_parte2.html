@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            let produto = {
+                descricao: 'Notebook',
+                preco: 1800,
+                detalhes: {
+                    fabricante: 'abc',
+                    modelo: 'xyz'
+                }
+            }
+
+            //Composição -> Objetos a partir de objetos literais  (é um) / tem um -> Atribuição de um objeto como valor de atributo de outro objeto 
+
+            //Token -> Array [] - Objeto {}
+
+            //let {descricao, preco} = produto
+
+            //let {descricao: d, preco: p} = produto
+
+            let {descricao: d, preco: p, desconto = 5} = produto
+
+            let { detalhes: { fabricante, modelo } } = produto
+
+            console.log(d, p, desconto)
+            console.log(fabricante, modelo)
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
