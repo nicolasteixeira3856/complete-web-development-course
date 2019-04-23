@@ -42,5 +42,45 @@
             <li>Time (hora)</li>
             <li>Datetime (combinação de date e time em um mesmo campo)</li>
         </ul>
+        <hr>
+        <h1>Incluindo, editando e removendo colunas de tabelas</h1>
+        <p>CREATE TABLE table_name (column1 datatype, column2 datatype, column3 datatype, .... );</p>
+        <p>ALTER TABLE table_name ADD column_name datatype;</p>
+        <p>ALTER TABLE table_name DROP COLUMN column_name;</p>
+        <p>ALTER TABLE table_name ALTER COLUMN column_name datatype;</p>
+        <hr>
+        <h1>Inserindo dados na tabela</h1>
+        <p>INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);</p>
+        <hr>
+        <h1>Consultado dados</h1>
+        <p>SELECT * FROM tb_cursos</p>
+        <p>SELECT * FROM tb_cursos where nome_curso = 'Curso de Node.JS com MongoDB'</p>
+        <hr>
+        <h1>Filtrando tabelas com operadores</h1>
+        <p>Operadores de comparação</p>
+        <ul>
+            <li> = valor da esquerda igual o valor da direita</li>
+            <li> < valor da esquerda menor que o valor da direita</li>
+            <li> <= valor da esquerda menor ou igual ao valor da direita</li>
+            <li> > valor da esquerda maior que o valor da direita</li>
+            <li> >= valor da esquerda maior ou igual ao valor da direita</li>
+        </ul>
+        <p>Operadores lógicos</p>
+        <ul>
+            <li>AND - Todas as operações de comparação devem ser verdadeiras</li>
+            <li>OR - Pelo menos uma das comparações devem ser verdadeiras</li>
+        </ul>
+        <p>Outros operadores</p>
+        <ul>
+            <li>BETWEEN - Seleciona valores de acordo com a instrução fornecida, os valores podem ser números, textos ou dados. Por ex: SELECT investimento FROM tb_cursos WHERE investimento BETWEEN 500 and 700; </li>
+            <li>IN - Permite especificar múltiplos valores em um WHERE. Por ex: SELECT interesse FROM tb_alunos WHERE interesse IN('Jogos', 'Música', 'Esporte'); </li>
+            <li>LIKE - Permite realizar filtros com base em uma pesquisa de caracteres dentro de uma coluna textual. Caracteres curingas: % Indica que pode haver a existência de qualquer conjunto de caracteres no texto. _ Indica que pode haver a existência de um ou mais caracteres em uma posição específica do texto. Por ex: SELECT nome FROM tb_alunos WHERE nome LIKE '%tt_';</li>
+        </ul>
+        <hr>
+        <h1>Ordenando resultado</h1>
+        <p>ASC ou DESC - ASC ordena de forma ascendente de DESC de forma descendente</p>
+        <hr>
+        <h1>Limitando retorno</h1>
+        <p>Utiliza-se LIMIT e OFFSET para limitar o retorno da query sql, LIMIT sendo a quantidade de registros a serem exibidos e OFFSET o início dos registros que serão exibidos. Por ex: SELECT nome FROM tb_alunos LIMIT 5 OFFSET 2. <strong>Também pode ser utilizado a escrita LIMIT 2, 5 por exemplo. </strong></p>
     </body>
 </html>
