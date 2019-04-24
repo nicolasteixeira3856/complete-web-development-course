@@ -82,5 +82,28 @@
         <hr>
         <h1>Limitando retorno</h1>
         <p>Utiliza-se LIMIT e OFFSET para limitar o retorno da query sql, LIMIT sendo a quantidade de registros a serem exibidos e OFFSET o início dos registros que serão exibidos. Por ex: SELECT nome FROM tb_alunos LIMIT 5 OFFSET 2. <strong>Também pode ser utilizado a escrita LIMIT 2, 5 por exemplo. </strong></p>
+        <hr>
+        <h1>Funções de agregação</h1>
+        <ul>
+            <li>MIN - Retorna o menor valor de todos os registros com base em uma coluna</li>
+            <li>MAX - Retorna o maior valor de todos os registros com base em uma coluna</li>
+            <li>AVG - Retorna a média de todos os registros com base em uma coluna</li>
+        </ul>
+        <p>Ex: SELECT [funções de agregação] FROM [tabela] WHERE [filtro]</p>
+        <hr>
+        <h1>Função Count</h1>
+        <p>Retorna o número de linhas do critério especificado. Por exemplo: SELECT COUNT(*) FROM `tb_cursos` WHERE ativo=true</p>
+        <hr>
+        <h1>GROUP BY</h1>
+        <p>Geralmente utilizado com funções de agregação. Por exemplo: SELECT interesse, count(*) AS total_por_interesse FROM `tb_alunos` GROUP BY interesse</p>
+        <hr>
+        <h1>HAVING</h1>
+        <p>Utilizado com funções de agregação. Por exemplo: </p>
+        <ul>
+            <li>SELECT estado, COUNT(*) as total_de_registros_por_estado FROM `tb_alunos` GROUP BY estado HAVING total_de_registros_por_estado > 5 [Nesse exemplo só serão considerado os estados que possuam um total_de_registros_por_estado maior do que 5]</li>
+            <li>SELECT estado, COUNT(*) as total_de_registros_por_estado FROM `tb_alunos` GROUP BY estado HAVING estado IN('MG', 'SP');</li>
+            <li>SELECT estado, COUNT(*) as total_de_registros_por_estado FROM `tb_alunos` GROUP BY estado HAVING estado IN('CE', 'SC') AND total_de_registros_por_estado > 4</li>
+            <li>SELECT estado, COUNT(*) as total_de_registros_por_estado FROM `tb_alunos`  WHERE interesse != 'Esporte' GROUP BY estado HAVING total_de_registros_por_estado > 3</li>
+        </ul>
     </body>
 </html>
