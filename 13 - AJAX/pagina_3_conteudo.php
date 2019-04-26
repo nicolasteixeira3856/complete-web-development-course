@@ -1,3 +1,4 @@
+<?php for ($i=0; $i < 50000000; $i++) {} ?>
 <div class="panel panel-default">
 	<div class="panel-body">
 		<h4>PÁGINA 3</h4>
