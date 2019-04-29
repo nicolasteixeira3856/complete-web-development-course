@@ -1,0 +1,66 @@
+/* $query = '
+            CREATE TABLE tb_usuarios(
+                id int not null primary key auto_increment,
+                nome varchar(50) not null,
+                email varchar(100) not null,
+                senha varchar(32) not null
+            )
+       ';
+
+       $retorno = $conexao->exec($query);
+       echo $retorno;
+
+       O PDO já trata a chamada acima automaticamente, caso a tabela já exista a instrução será ignorada.
+        $query = '
+            INSERT INTO tb_usuarios(
+                nome, email, senha
+            ) values (
+                "Nicolas Tex",
+                "nicolastex@teste.com.br",
+                "123456"
+            )
+        '; 
+        $query = '
+        INSERT INTO tb_usuarios(
+            nome, email, senha
+        ) values (
+            "Nicolas Tex",
+            "nicolastex@teste.com.br",
+            "123456"
+        )
+        '; 
+       $retorno = $conexao->exec($query);
+        $query = '
+        INSERT INTO tb_usuarios(
+            nome, email, senha
+        ) values (
+            "Joao Gui",
+            "joagui@teste.com.br",
+            "123456"
+        )
+        '; 
+        $retorno = $conexao->exec($query);
+        $query = '
+        INSERT INTO tb_usuarios(
+            nome, email, senha
+        ) values (
+            "Halysson",
+            "halysson@teste.com.br",
+            "123456"
+        )
+        '; 
+        $retorno = $conexao->exec($query);
+        $query = ' SELECT * FROM tb_usuarios';
+        //$stmt = $conexao->query($query);
+
+        foreach ($conexao->query($query) as $key => $value) {
+            print_r($value[1]);
+            echo '<hr>';
+        }
+        //$usuario = $stmt->fetchAll(PDO::FETCH_ASSOC); //Fetch all
+        //echo $lista[1][1];
+        //echo $usuario [0]->nome;
+        /*
+        foreach ($usuario as $key => $value) {
+            print_r($value);
+        } */
