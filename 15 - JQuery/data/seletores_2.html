@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Jquery</title>
+        <script src="../js/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <p>1 - Combinação de seletores do jQuery</p>
+        <p>2 - Como atuar sobre o array de retorno da seleção de elementos (:first :even, :odd e :last)</p>
+        <hr>
+
+        <input class="exemplo1" type="text" placeholder="Input1">
+        <input type="text" placeholder="Input2">
+        <input type="text" placeholder="Input3">
+
+        <div class="exemplo1" >Div1</div>
+        <div>Div2</div>
+        <div>Div3</div>
+
+        <ul class="lista1">
+            <li class="exemplo1" >Op1</li>
+            <li class="exemplo2">Op2</li>
+            <li class="exemplo2">Op3</li>
+        </ul>
+        <ul class="lista2">
+            <li class="exemplo2">Op1</li>
+            <li class="exemplo2">Op2</li>
+            <li>Op3</li>
+        </ul>
+
+    </body>
+    <script>
+
+        //Combinação de Seletores
+            //Selecionar elementos por classe de tag específica.
+                console.log($('input.exemplo1'));
+            //Selecionar elementos por classe de classe específica
+                console.log($('.lista1 .exemplo2'));
+
+        //Atuação sobre o array de retorno da seleção de elementos
+                console.log($('.lista1 .exemplo2'));
+                console.log($('.lista1 .exemplo2:first'));
+                console.log($('.lista1 .exemplo2:last'));
+                console.log($('.lista1 .exemplo2:even'));
+                console.log($('.lista1 .exemplo2:odd'));
+
+    </script>
+</html>

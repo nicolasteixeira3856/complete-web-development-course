@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Jquery</title>
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $('#lista1').append('<li> Teste de inserção com append - ready function </li>')
+                $('#lista2').after('<p>Eu fui inserido após a div</p>')
+            })
+        </script>
+    </head>
+    <body>
+        <p>Inserindo e removendo elementos html com before, prepend, append e after.</p>
+        <hr>
+        <ul id="lista1">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+
+        <div id="lista2">
+            <div>Item1</div>
+            <div>Item2</div>
+            <div>Item3</div>
+        </div>
+
+        
+    </body>
+</html>
