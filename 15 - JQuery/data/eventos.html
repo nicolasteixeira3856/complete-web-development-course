@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<style>
+			#divExterna{
+				background-color: #ccc;
+				width: 80px;
+				height: 80px;
+			}
+
+			.inputFocado{
+				background-color: #ff0000;
+			}
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(() => {
+				$('#onload').html('Página carregada')
+
+				$(window).scroll(() => {
+					$('#scroll').html('Scroll acionado')
+				})
+
+				$(window).resize(() => {
+					$('#resize').html('Página redimensionada').css({'background-color': 'red'})
+				})
+
+				//Function / Arrow Function
+				$('#div1').scroll(function(){
+					$(this).css({'background-color' : 'blue'})
+				})
+
+				//Eventos do Mouse
+
+				$('#btn1').mousedown(() => {
+					$('#div2').css({'background-color': 'green'})
+				})
+
+				$('#btn1').click(() => {
+					$('#div2').css({'background-color': 'blue'})
+				})
+
+				$('#btn2').dblclick(() => {
+					$('#div2').css({'background-color': 'yellow'})
+				})
+
+				$('#div2').mousemove((e) => {
+					$('#resultadodiv').html(' X: ' + e.offsetX + ' / Y: ' + e.offsetY)
+				})
+
+				$('#divExterna').mouseenter((e) => {
+					$('#resultadoDiv1').html('Entrou')
+				})
+
+				$('#divExterna').mouseleave((e) => {
+					$('#resultadoDiv1').html('Saiu')
+				})
+
+				//Eventos teclado
+
+				$('#teclado').keyup((e) => {
+					$('#resultadoTecla').html('Tecla Liberada')
+
+					if(e.keyCode == 13){
+						let txt = $(e.target).val()
+						$('#resultadoTecla').html(txt)
+					}
+				})
+
+				//Eventos de formulário
+				$('#nome, #email').focus((e) => {
+					$(e.target).addClass('inputFocado')
+				})
+
+				$('#nome, #email').blur((e) => {
+					$(e.target).removeClass('inputFocado')
+				})
+
+				$('#opcao').change((e) => {
+					console.log(e.target)
+				})
+
+				$('form').submit((e) => {
+					e.preventDefault()
+					console.log('Form')
+				})	
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="topo">
+			<h1>Eventos</h1>
+		</div>
+
+		<div>
+			<h3>Browser</h3>
+			<span>Onload: </span><span id="onload">?</span><br />
+			<span>Scroll: </span><span id="scroll">?</span><br />
+			<span>Resize window: </span><span id="resize">?</span>
+			<br/>
+			<div id="div1" style="height: 100px; width: 100px; border: solid 1px; overflow-y:scroll"> 
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+			<hr />
+
+			<h3>Mouse</h3>
+			<p>mousedown(), mouseup(), click(), dbclick(), mousemove(), mouseenter(), mouseleave()</p>
+			<br/>
+			<button id="btn1" type="button">Clique aqui</button>
+			<button id="btn2" type="button">Clique aqui 2x</button>
+			<div id="div2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
+			<span>Resultado do evento sobre a div</span><span id="resultadodiv"></span>
+			<br/>
+			<br/>
+			<div id="divExterna"></div>
+			<span>Div Externa: </span><span id="resultadoDiv1"></span>
+			<hr />
+
+			<h3>Teclado</h3>
+			<span>Nome:</span>
+			<input id="teclado" type="text" />
+			<span id="resultadoTecla">Resultado do evento sobre o input</span>
+			<hr />
+
+			<h3>Formulário</h3>
+			<p>Focus(), blur(), change(), submit()</p>
+			<form id="form">
+				<span>Nome:</span>
+				<input id="nome" type="text" />
+
+				<span>E-mail:</span>
+				<input id="email" type="text" />
+
+				<span>Motivo do contato:</span>
+				<select id="opcao">
+					<option value="">-- Selecione --</option>
+					<option value="duvida">Dúvida</option>
+					<option value="sugestao">Sugestão</option>
+				</select>
+				
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+	</body>
+
+</html>
