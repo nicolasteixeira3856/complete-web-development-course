@@ -1,0 +1,14 @@
+$cor: black;
+$bg: red;
+
+h1 {
+  color: $cor;
+}
+
+div {
+  background-color: $bg;
+}
+
+/*# sourceMappingURL=arquivo.scss.map */
+//sass arquivo.scss arquivo.css
+//sass --watch arquivo.scss:arquivo.css
