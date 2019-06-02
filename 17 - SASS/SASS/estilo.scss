@@ -1,5 +1,103 @@
-$cor: black;
+/* Aninhamento */
+/* Referenciando seletor pai - &  */
+/* Variaveis */
 
-h1 {
-    color: $cor;
+@import '_variaveis.scss';
+@import '_mixin.scss';
+
+$cor-titulo: red;
+$tamanho-titulo: 35px;
+
+
+#conteudo {
+    background: $cor-padrao;
+    padding: 15px;
+    h1{
+        color: black;
+    }
+    a{
+        color:red;
+        &:hover{
+            color: yellow;
+        }
+    }
 }
+
+
+h2{
+    color:$cor-titulo;
+    font-size: $tamanho-titulo;
+}
+
+#rodape{
+    $cor-padrao: #333;
+    background-color: $cor-padrao;
+}
+
+/* Interpolacao */
+
+$paragrafo: red;
+$classe: 'red';
+$color: color;
+
+.#{$classe}{
+    #{$color}:$paragrafo;
+}
+
+/* For - through (de 1 até 3), to (de 1 a 3)  */
+
+@for $i from 1 through 3 {
+    .item-#{$i}{
+        background:greenyellow;
+        margin-bottom: 2px;
+    }
+}
+
+$contador: 4;
+@while ($contador < 6) {
+    .item-#{$contador}{
+        background:orangered;
+        margin-bottom: 2px;
+    }
+    $contador: $contador + 1;
+}
+
+$lista: green, yellow, red;
+$contador: 6;
+@each $cor in $lista {
+    .item-#{$contador}{
+        background:$cor;
+        margin-bottom: 2px;
+    }
+
+    $contador: $contador + 1;
+}
+/* Funções */
+$total: 12;
+@function largura-coluna($coluna){
+    @return percentage($coluna/$total);
+}
+
+$resultado: largura-coluna(12);
+/*
+#{$resultado}
+*/
+
+@for $i from 1 through $total {
+    .col-#{$i}{
+        color: white;
+        width: largura-coluna($i);
+        background:blue;
+    }
+}
+
+/*Outras Funções 
+mix(green,orange,50%)
+darken(orange,50%)
+lighten(orange,40%)
+*/
+
+.alerta {
+    background: mix(green, orange,40%);
+    color: yellow;
+  }

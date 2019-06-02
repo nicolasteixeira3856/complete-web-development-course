@@ -1,5 +1,160 @@
-h1 {
+@charset "UTF-8";
+/* Aninhamento */
+/* Referenciando seletor pai - &  */
+/* Variaveis */
+#conteudo {
+  background: green;
+  padding: 15px;
+}
+#conteudo h1 {
   color: black;
+}
+#conteudo a {
+  color: red;
+}
+#conteudo a:hover {
+  color: yellow;
+}
+
+h2 {
+  color: red;
+  font-size: 35px;
+}
+
+#rodape {
+  background-color: #333;
+}
+
+/* Interpolacao */
+.red {
+  color: red;
+}
+
+/* For - through (de 1 até 3), to (de 1 a 3)  */
+.item-1 {
+  background: greenyellow;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: greenyellow;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: greenyellow;
+  margin-bottom: 2px;
+}
+
+.item-4 {
+  background: orangered;
+  margin-bottom: 2px;
+}
+
+.item-5 {
+  background: orangered;
+  margin-bottom: 2px;
+}
+
+.item-6 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-7 {
+  background: yellow;
+  margin-bottom: 2px;
+}
+
+.item-8 {
+  background: red;
+  margin-bottom: 2px;
+}
+
+/* Funções */
+/*
+100%
+*/
+.col-1 {
+  color: white;
+  width: 8.3333333333%;
+  background: blue;
+}
+
+.col-2 {
+  color: white;
+  width: 16.6666666667%;
+  background: blue;
+}
+
+.col-3 {
+  color: white;
+  width: 25%;
+  background: blue;
+}
+
+.col-4 {
+  color: white;
+  width: 33.3333333333%;
+  background: blue;
+}
+
+.col-5 {
+  color: white;
+  width: 41.6666666667%;
+  background: blue;
+}
+
+.col-6 {
+  color: white;
+  width: 50%;
+  background: blue;
+}
+
+.col-7 {
+  color: white;
+  width: 58.3333333333%;
+  background: blue;
+}
+
+.col-8 {
+  color: white;
+  width: 66.6666666667%;
+  background: blue;
+}
+
+.col-9 {
+  color: white;
+  width: 75%;
+  background: blue;
+}
+
+.col-10 {
+  color: white;
+  width: 83.3333333333%;
+  background: blue;
+}
+
+.col-11 {
+  color: white;
+  width: 91.6666666667%;
+  background: blue;
+}
+
+.col-12 {
+  color: white;
+  width: 100%;
+  background: blue;
+}
+
+/*Outras Funções 
+mix(green,orange,50%)
+darken(orange,50%)
+lighten(orange,40%)
+*/
+.alerta {
+  background: #999600;
+  color: yellow;
 }
 
 /*# sourceMappingURL=estilo.css.map */
