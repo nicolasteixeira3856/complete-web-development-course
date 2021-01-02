@@ -7,6 +7,63 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <h1>Título do meu App</h1>
-  <p>Conteúdo do App</p>
+  <h1>Botões</h1>
+
+  <ion-button>Padrão</ion-button>
+
+  <ion-button href="http://google.com.br">Link</ion-button>
+
+  <!-- Cores -->
+  <h4>Cores</h4>
+
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+
+  <ion-button color="success">success</ion-button>
+  <ion-button color="warning">warning</ion-button>
+  <ion-button color="danger">danger</ion-button>
+  <ion-button color="light">light</ion-button>
+  <ion-button color="medium">medium</ion-button>
+  <ion-button color="dark">dark</ion-button>
+
+    <!-- Expandido -->
+    <h4>Expandido</h4>
+
+    <ion-button expand="full" color="danger">Full</ion-button>
+    <ion-button expand="block" color="danger">Block</ion-button>
+
+    <!-- Arredondado -->
+    <h4>Arredondado</h4>
+
+    <ion-button shape="round" color="danger">Full</ion-button>
+    
+    <!-- Preenchimento -->
+    <h4>Preenchimento</h4>
+    
+    <ion-button fill="outline" color="success">Full</ion-button>
+
+    <!-- Preenchimento -->
+    <h4>Icones</h4>
+
+    <ion-button>
+      <ion-icon name="star" slot="start"></ion-icon>
+      Icone
+    </ion-button>
+    <br>
+    <ion-button>
+      <ion-icon name="star" slot="end"></ion-icon>
+      Icone
+    </ion-button>
+    <br>
+    <ion-button>
+      <ion-icon name="arrow-back-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+
+    <!-- Preenchimento -->
+    <h4>Tamanhos</h4>
+
+    <ion-button size="large">Large</ion-button><br>
+    <ion-button>Padrão</ion-button><br>
+    <ion-button size="small">Small</ion-button>
 </ion-content>
