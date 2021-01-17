@@ -1,0 +1,28 @@
+@import 'modal';
+@import 'panel';
+
+.ct-panel {
+	display: flex;
+	align-items: center;
+
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: var(--vertical-alignment, center);
+		width: 100%;
+		height: 100%;
+		overflow: var(--overflow, auto);
+		-webkit-overflow-scrolling: touch;
+
+		> section {
+			display: flex;
+			flex-direction: column;
+			align-items: var(--horizontal-alignment, flex-start);
+			padding: var(--section-padding, 50px);
+
+			@include media-breakpoint-down (sm) {
+				--section-padding: 30px;
+			}
+		}
+	}
+}

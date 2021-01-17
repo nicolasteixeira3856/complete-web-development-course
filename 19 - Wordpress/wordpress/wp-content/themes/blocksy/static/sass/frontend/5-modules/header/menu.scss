@@ -1,0 +1,9 @@
+[class*="header-menu"] {
+	// height: var(--height);
+	height: 100%;
+	min-width: 0;
+
+	.menu {
+		height: inherit;
+	}
+}

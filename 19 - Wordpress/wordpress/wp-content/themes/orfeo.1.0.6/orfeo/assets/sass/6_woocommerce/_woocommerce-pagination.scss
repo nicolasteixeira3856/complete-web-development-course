@@ -1,0 +1,26 @@
+.woocommerce-pagination {
+
+  ul.page-numbers {
+
+    .page-numbers {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 25px;
+      text-transform: capitalize;
+      border: 2px solid;
+    }
+    .page-numbers:hover {
+      color: #fff;
+    }
+
+    li > span.current {
+      box-shadow: none !important;
+      color: #fff;
+      border: 2px solid;
+    }
+    li > span.current:hover {
+      @include no-box-shadow();
+    }
+
+  }
+}

@@ -1,0 +1,53 @@
+/* Success message */
+.woocommerce-page .woocommerce-message {
+  @include no-font-smooth();
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  /* This is for breaking the container width */
+  margin-left: -100%;
+  margin-right: -100%;
+}
+.woocommerce-page .woocommerce-message:before {
+  display: none;
+}
+
+/* Error message */
+.woocommerce-page .woocommerce-error {
+  @include no-font-smooth();
+  color: #ffffff;
+  background-color: #f7765f;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  /* This is for breaking the container width */
+  margin-left: -100%;
+  margin-right: -100%;
+}
+.woocommerce-page .woocommerce-error:before {
+  display: none;
+}
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Info message */
+.woocommerce-page .woocommerce-info {
+  @include no-font-smooth();
+  color: #ffffff;
+  background-color: #6ec7e0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.woocommerce-page .woocommerce-info:before {
+  display: none;
+}

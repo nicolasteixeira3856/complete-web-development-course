@@ -1,0 +1,108 @@
+.hestia-team {
+
+  @include font-smooth();
+
+  .hestia-title {
+    color: $color-secondary;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 43px;
+    margin: 30px 0 25px;
+    min-height: 32px;
+  }
+
+  h5.description {
+    color: #9A9A9A;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .hestia-team-content {
+
+    margin: 30px 0 0;
+
+    .card {
+
+      margin: 30px 0 20px;
+      text-align: center;
+
+      .col-md-5 {
+
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        width: auto;
+
+        .card-image {
+          display: block;
+          width: 120px;
+          height: 120px;
+          margin: 0 auto;
+          @include border-radius(50%);
+          @include no-box-shadow();
+
+          img {
+            @include no-box-shadow();
+            @include border-radius(12px);
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .col-md-7 {
+
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: auto;
+      }
+
+      .content {
+
+        .card-title {
+          color: $color-secondary;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 26px;
+          margin: 5px 0 0;
+        }
+
+        .category {
+          color: #868e96;
+          font-size: 12px;
+          font-weight: 600;
+          line-height:18px;
+          margin: 5px 0;
+        }
+
+        .card-description {
+          color: #9A9A9A;
+          font-family: inherit;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 22px;
+          margin: 15px 0 5px;
+        }
+
+        .footer {
+
+          a.btn {
+            opacity: 0.8;
+          }
+          a.btn:hover {
+            opacity: 0.65;
+          }
+        }
+      }
+
+    }
+  } /* End of .hestia-team-content */
+
+
+}
+

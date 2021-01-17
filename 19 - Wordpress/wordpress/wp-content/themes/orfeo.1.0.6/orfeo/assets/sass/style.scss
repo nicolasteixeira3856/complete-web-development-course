@@ -1,0 +1,51 @@
+/*
+Theme Name:     Orfeo
+Theme URI:      https://themeisle.com/themes/orfeo/
+Author:         ThemeIsle
+Author URI:     https://themeisle.com
+Description:    Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
+Version:        1.0.6
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    orfeo
+Template:       hestia
+Tags: blog, custom-logo, portfolio, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+@import "0_base/variables";
+@import "0_base/mixins";
+@import "0_base/reset";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "1_typography/typography-main";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "2_elements/elements-main";
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+@import "3_sections/sections-main";
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+@import "4_blog/blog-main";
+
+/*--------------------------------------------------------------
+# Page
+--------------------------------------------------------------*/
+@import "5_page/page-main";
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+@import "6_woocommerce/woocommerce-main";

@@ -1,0 +1,17 @@
+.subscribe-line {
+
+  @include font-smooth();
+
+  .title {
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
+  }
+
+  .subscribe-description {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 40px;
+  }
+}

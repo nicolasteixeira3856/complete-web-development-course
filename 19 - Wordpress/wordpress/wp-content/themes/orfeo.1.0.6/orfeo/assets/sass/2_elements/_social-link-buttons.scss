@@ -1,0 +1,7 @@
+.btn.btn-just-icon {
+  @include no-box-shadow();
+}
+.btn.btn-just-icon:hover {
+  @include no-box-shadow();
+  opacity: 0.75;
+}

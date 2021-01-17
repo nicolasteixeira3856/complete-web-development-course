@@ -1,0 +1,21 @@
+/* Page header height on default page template */
+.archive,
+.page-template-default {
+
+  .boxed-layout-header {
+    padding-bottom: 0;
+  }
+}
+
+/* Page header height on search and shop page */
+.archive.woocommerce-page,
+.search {
+  .boxed-layout-header {
+    padding-bottom: 60px;
+  }
+}
+
+/* Page title */
+.hestia-title {
+  font-weight: 300;
+}

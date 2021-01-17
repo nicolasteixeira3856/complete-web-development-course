@@ -1,0 +1,14 @@
+a,
+.btn,
+button,
+.button {
+  box-shadow: none !important;
+}
+
+a:hover,
+.btn:hover,
+button:hover,
+.button:hover {
+  box-shadow: none !important;
+  opacity: 0.75;
+}

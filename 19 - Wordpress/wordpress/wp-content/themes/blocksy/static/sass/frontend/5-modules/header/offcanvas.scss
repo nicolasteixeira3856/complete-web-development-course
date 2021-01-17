@@ -1,0 +1,51 @@
+#offcanvas {
+	.content-container section {
+		--margin: 20px 0;
+
+		> * {
+			margin: var(--margin);
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	[data-device="desktop"] {
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+
+	[data-device="mobile"] {
+		@include media-breakpoint-up(lg) {
+			display: none;
+		}
+	}
+
+	// modal
+	&[data-behaviour='modal'] {
+		@include media-breakpoint-only(md) {
+			--padding: 40px 20vw;
+		}
+
+		@include media-breakpoint-up(lg) {
+			--padding: 40px 25vw;
+		}
+	}
+
+	// panel
+	&[data-behaviour*='side'] {
+		@include media-breakpoint-down(sm) {
+			--padding: 40px;
+		}
+
+		@include media-breakpoint-up(md) {
+			--padding: 40px 20%;
+		}
+	}
+}

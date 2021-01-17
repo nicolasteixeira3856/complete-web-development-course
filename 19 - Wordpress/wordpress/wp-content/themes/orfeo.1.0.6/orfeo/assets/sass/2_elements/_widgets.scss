@@ -1,0 +1,188 @@
+/* === General Widgets === */
+
+/* Search Widget */
+.widget.widget_search {
+  .search-form input[type=submit] {
+    @include no-box-shadow();
+    @include border-radius(50px);
+  }
+}
+.widget.widget_search:hover {
+  .search-form input[type=submit] {
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+}
+
+/* Drop-down Widget */
+.widget {
+  select {
+    @include border-radius(30px);
+    background: transparent;
+    border: 1px solid #eeeeee;
+    font-weight: 300;
+    padding-left: 15px;
+  }
+}
+
+/* List widgets remove left padding only for the main list
+ * subcategories should keep the left padding */
+.widget > ul {
+  padding: 0;
+}
+
+/* === Widgets Areas === */
+
+/* Blog and Shop widgets area */
+.blog-sidebar,
+.shop-sidebar {
+
+  @include no-box-shadow();
+
+  .widget {
+
+    @include font-smooth();
+    color: $color-secondary;
+    font-family: inherit;
+    font-weight: 300;
+
+    a {
+      color: inherit;
+      font-weight: inherit;
+    }
+    h5 {
+      //font-family: inherit;
+      font-weight: 300;
+    }
+  } /* End of .widget */
+  /* Remove box-shadow and animation from product thumbnail */
+  .widget.woocommerce li a img {
+    @include no-box-shadow();
+  }
+  .widget.woocommerce li:hover a img {
+    @include no-transform();
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+} /* End of Blog and Shop widgets area */
+
+/* Footer widgets area */
+.footer-big {
+
+  .widget {
+    color: #ffffff;
+    font-weight: 300;
+    h5,
+    ul li,
+    ul li a {
+      font-weight: inherit;
+    }
+  }
+
+  /* Remove box-shadow and animation from product thumbnail */
+  .widget.woocommerce li a img {
+    @include no-box-shadow();
+  }
+  .widget.woocommerce li:hover a img {
+    @include no-transform();
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+
+  /* Average rating */
+  .woocommerce.widget_rating_filter {
+    .wc-layered-nav-rating {
+      .star-rating {
+        top: 10px;
+        left: -182px;
+      }
+    }
+  }
+} /* End of Footer widgets area */
+
+/* Very Top bar */
+.hestia-top-bar {
+  .woocommerce.widget_shopping_cart {
+    .buttons > a.button {
+      display: none;
+    }
+  }
+} /* End of Very Top bar */
+
+/* === WooCommerce Widgets === */
+
+/* Cart widget */
+.woocommerce.widget_shopping_cart {
+  .buttons > a.button {
+    @include widgets-button();
+  }
+  .buttons > a.button:hover {
+    @include widgets-button-hover();
+  }
+}
+.woocommerce div[id^=woocommerce_widget_cart].widget .buttons > a.button,
+.woocommerce div[id^=woocommerce_widget_cart].widget .buttons > a.button:hover {
+  @include no-box-shadow();
+}
+
+/* Filter by price widget */
+.woocommerce.widget_price_filter {
+  button.button {
+    @include widgets-button();
+  }
+  button.button:hover {
+    @include widgets-button-hover();
+  }
+}
+.woocommerce .widget_price_filter .price_slider_amount .button {
+  float: right;
+}
+
+/* Product tags */
+.widget_product_tag_cloud {
+  .tag-cloud-link:hover {
+    opacity: 0.75;
+  }
+}
+
+/* Product search */
+.woocommerce.widget_product_search {
+  input[type=submit] {
+    @include no-box-shadow();
+    @include border-radius(50px);
+  }
+  input[type=submit]:hover {
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+}
+
+@media ( max-width: 1200px ) {
+  /* Cart widget */
+  .woocommerce.widget_shopping_cart {
+    .buttons > a.button {
+      display: block;
+      width: 100%;
+      margin: 5px auto 0;
+      text-align: center;
+    }
+  }
+  /* Filter by price widget */
+  #secondary div[id^=woocommerce_price_filter] div.price_label,
+  .footer-big div[id^=woocommerce_price_filter] div.price_label {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0 0;
+    text-align: center;
+    clear: both;
+  }
+  .woocommerce .widget_price_filter .price_slider_amount .button {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto 5px;
+    text-align: center;
+  }
+} /* End of media queries */

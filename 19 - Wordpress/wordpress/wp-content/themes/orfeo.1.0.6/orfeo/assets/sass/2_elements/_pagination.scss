@@ -1,0 +1,35 @@
+.pagination {
+
+  .nav-links {
+
+    .page-numbers {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 25px;
+      text-transform: capitalize;
+      border: 2px solid;
+    }
+    .page-numbers:hover {
+      color: #fff;
+    }
+
+    .page-numbers.dots {
+      display: none;
+    }
+    
+    .prev:before,
+    .next:after {
+      display: none;
+    }
+
+    .current {
+      @include no-box-shadow();
+      color: #fff;
+      border: 2px solid;
+    }
+    .current:hover {
+      @include no-box-shadow();
+    }
+
+  }
+}

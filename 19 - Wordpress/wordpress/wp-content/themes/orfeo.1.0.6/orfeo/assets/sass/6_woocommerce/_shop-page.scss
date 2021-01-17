@@ -1,0 +1,182 @@
+.card-product {
+  @include no-box-shadow();
+  background: transparent;
+
+  .card-image {
+    @include no-box-shadow();
+    margin: 0;
+
+    a {
+      @include no-box-shadow();
+
+      img {
+        @include no-box-shadow();
+        @include border-radius(12px);
+      }
+    }
+  }
+
+  .content {
+
+    @include font-smooth();
+    padding: 15px 5px 0;
+
+    .card-title {
+      color: #9A9A9A;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: left;
+      padding: 0;
+      margin: 15px 0 5px;
+    }
+
+    .category {
+      color: #333333;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 22px;
+      text-align: left;
+      text-transform: none;
+      margin: 0;
+
+      a {
+        color: #9A9A9A;
+      }
+    }
+
+    .footer {
+      width: 100%;
+      margin: 0;
+
+      .price {
+        display: inline-block;
+        color: #333333;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+
+        h4 {
+          margin: 0;
+        }
+      }
+
+      .stats {
+
+        .btn.btn-just-icon:hover  {
+          opacity: 1;
+        }
+
+        a {
+          margin: 0 0 10px !important;
+        }
+
+        .tooltip .tooltip-arrow:before {
+          border-top: 11px solid #FFFFFF;
+          border-left: 11px solid transparent;
+          border-right: 11px solid transparent;
+          left: -8px;
+          right: auto;
+          top: -12px;
+          margin-left: -3px;
+          content: "";
+          border-width: 10px 11px 0;
+          border-top-color: #fff;
+          position: absolute;
+        }
+        .tooltip .tooltip-arrow {
+          border-top: 11px solid rgba(0, 0, 0, 0.2);
+          border-left: 11px solid transparent;
+          border-right: 11px solid transparent;
+          right: auto;
+          margin-right: 0;
+          top: 43px;
+          position: absolute;
+          display: block;
+          width: 5px;
+          height: 5px;
+          bottom:0;
+        }
+        .tooltip .tooltip-inner {
+          background-color: #FFFFFF;
+          border-radius: 4px;
+          box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+          color: #66615B;
+          max-width: 200px;
+          padding: 10px 10px;
+          text-align: center;
+          text-decoration: none;
+          opacity: 1;
+        }
+        /* Add to cart icon */
+        .add_to_cart_button {
+          position: relative;
+          z-index: 100;
+        }
+        .add_to_cart_button:active,
+        .add_to_cart_button:focus {
+          @include no-box-shadow();
+        }
+        .hestia-view-cart-wrapper {
+          bottom: -40px;
+          /* View cart button */
+          .added_to_cart {
+            @include no-box-shadow();
+            @include border-radius(30px);
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 21px;
+            padding: 8px 18px;
+          }
+          .added_to_cart:hover {
+            @include no-box-shadow();
+            opacity: 0.75;
+          }
+          .added_to_cart:focus,
+          .added_to_cart:active {
+            @include no-box-shadow();
+          }
+        }
+      }
+    }
+  }
+}
+
+.woocommerce.archive {
+
+  .wrapper .main {
+    background-color: #fff;
+
+    .card-product {
+      background-color: #fff;
+    }
+  }
+
+  .products {
+
+    .product {
+
+      > .card > .card-image {
+        @include no-box-shadow();
+      }
+    }
+
+    .product:hover > .card > .card-image {
+      @include no-box-shadow();
+      @include no-transform();
+      opacity: .75;
+    }
+
+  }
+
+  .blog-post .products li:nth-of-type(6n) .category a,
+  .blog-post .products li:nth-of-type(6n+1) .category a,
+  .blog-post .products li:nth-of-type(6n+2) .category a,
+  .blog-post .products li:nth-of-type(6n+3) .category a,
+  .blog-post .products li:nth-of-type(6n+4) .category a,
+  .blog-post .products li:nth-of-type(6n+5) .category a {
+    color: #9A9A9A !important;
+  }
+}

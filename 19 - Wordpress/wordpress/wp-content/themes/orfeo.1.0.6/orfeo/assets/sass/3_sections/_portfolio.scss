@@ -1,0 +1,36 @@
+.hestia-work {
+
+  @include font-smooth();
+
+  .hestia-title {
+    color: $secondary-font;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
+    margin: 30px 0 25px;
+    min-height: 32px;
+  }
+
+  .description {
+    color: #9A9A9A;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 8px;
+  }
+
+  .hestia-portfolio-content {
+
+    .card {
+
+      -webkit-box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+      -moz-box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+      box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+
+      .card-title {
+        @include no-font-smooth();
+        font-weight: 300;
+      }
+    }
+  }
+}

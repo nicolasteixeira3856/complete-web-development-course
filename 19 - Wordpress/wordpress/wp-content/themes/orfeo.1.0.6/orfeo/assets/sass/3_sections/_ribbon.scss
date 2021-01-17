@@ -1,0 +1,25 @@
+.hestia-ribbon {
+
+  @include font-smooth();
+  padding: 35px 0;
+
+  .hestia-title {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 54px;
+  }
+
+  .btn.btn-primary {
+    @include border-radius(30px);
+    @include no-box-shadow();
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 8px 18px;
+  }
+  .btn.btn-primary:hover {
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+}

@@ -1,0 +1,17 @@
+.menu-item {
+	.ct-icon-container {
+		color: var(--linkInitialColor);
+
+		&.ct-left {
+			margin-right: 0.5em;
+		}
+
+		&.ct-right {
+			margin-left: 0.5em;
+		}
+	}
+
+	> a:hover .ct-icon-container {
+		color: var(--linkHoverColor);
+	}
+}

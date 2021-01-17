@@ -1,0 +1,72 @@
+.carousel {
+
+  @include font-smooth();
+
+  .hestia-title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+    margin: 30px 0 25px;
+  }
+
+  .sub-title {
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 8px;
+  }
+
+  .buttons {
+
+    margin: 30px 0 0;
+
+    a {
+
+      @include border-radius(30px);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      padding: 11px 30px;
+    }
+
+    .btn.btn-primary,
+    .btn.btn-primary:hover {
+      @include no-box-shadow();
+    }
+    .btn.btn-primary:hover {
+      opacity: 0.75;
+    }
+
+    .btn-right {
+      @include no-box-shadow();
+      color: #ffffff;
+      background-color: transparent;
+      border: 2px solid #ffffff;
+      padding: 9px 28px;
+    }
+    .btn-right:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .big-title-slider-content .buttons {
+    .btn,
+    .btn-right {
+      display: inline-block;
+      margin: 15px;
+    }
+  }
+
+  .big-title-slider-content.text-left .buttons {
+    .btn {
+      margin-left: auto;
+    }
+  }
+  .big-title-slider-content.text-right .buttons {
+    .btn {
+      margin-right: auto;
+    }
+  }
+}

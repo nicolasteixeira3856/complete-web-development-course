@@ -1,0 +1,24 @@
+.woocommerce-MyAccount-navigation {
+  font-weight: 300;
+}
+.woocommerce-MyAccount-content {
+  font-weight: 300;
+
+  .woocommerce-Message {
+    .woocommerce-Button:hover {
+      @include no-box-shadow();
+      opacity: 0.75;
+    }
+  }
+
+  .woocommerce-EditAccountForm {
+    input.woocommerce-Button {
+      @include no-box-shadow();
+    }
+    input.woocommerce-Button:hover {
+      @include no-box-shadow();
+      opacity: 0.75;
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+.main-raised {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.single-post .main-raised {
+  margin-bottom: 0;
+}
+.archive.woocommerce-page .main-raised {
+  margin-bottom: 0;
+}

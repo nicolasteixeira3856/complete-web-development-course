@@ -1,0 +1,26 @@
+.track_order {
+
+  @include font-smooth();
+  font-family: inherit;
+  font-weight: 300;
+
+  label {
+    font-weight: 400;
+  }
+
+  input[type=submit] {
+    @include no-box-shadow();
+    @include border-radius(5px);
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 11px 20px;
+    border: none;
+  }
+  input[type=submit]:hover {
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+}

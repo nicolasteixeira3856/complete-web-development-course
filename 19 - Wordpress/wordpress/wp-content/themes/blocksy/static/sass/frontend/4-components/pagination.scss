@@ -1,0 +1,166 @@
+.ct-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&:not([data-divider]) {
+		margin-top: var(--spacing);
+	}
+
+	&[data-divider] {
+		margin-top: calc(var(--spacing) / 2);
+		padding-top: calc(var(--spacing) / 2);
+		border-top: var(--border);
+	}
+
+	svg {
+		fill: currentColor;
+	}
+}
+
+// simple & prev next type
+[data-pagination="simple"],
+[data-pagination="next_prev"] {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color);
+	--linkInitialColor: var(--color);
+
+	.page-numbers {
+		// flex: 1;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+		border-radius: 4px;
+		border: 2px solid transparent;
+
+		&:not(.dots) {
+			&:hover {
+				border-color: var(--linkHoverColor);
+			}
+		}
+	}
+
+	.prev, .next {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 0 17px;
+		border-color: rgba(0, 0, 0, 0.04);
+	}
+
+	.prev {
+		svg {
+			margin-right: 8px;
+		}
+	}
+
+	.next {
+		margin-left: auto;
+
+		svg {
+			margin-left: 8px
+		}
+	}
+}
+
+
+// simple type
+[data-pagination="simple"] {
+
+	.page-numbers {
+		transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					background 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&.current {
+			color: var(--colorActive);
+			background: var(--linkHoverColor);
+		}
+	}
+
+	> div {
+		flex: 1;
+		text-align: center;
+
+		.page-numbers {
+			flex: 0 0 41px;
+			width: 41px;
+
+			@include media-breakpoint-down (sm) {
+				margin: 0 5px;
+			}
+
+			@include media-breakpoint-up (md) {
+				margin: 0 8px;
+			}
+		}
+	}
+}
+
+
+// next & prev type
+[data-pagination="next_prev"] nav {
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+
+// load more & infinite type
+[data-pagination="load_more"],
+[data-pagination="infinite_scroll"] {
+	> * {
+		display: none;
+	}
+
+	.ct-load-more-helper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		min-height: 45px;
+		margin: 0 auto;
+
+		[data-loader] {
+			opacity: 0;
+			transition: opacity 0.2s ease;
+		}
+
+		&.ct-loading {
+			[data-loader] {
+				opacity: 1;
+				animation-play-state: running;
+			}
+
+			.ct-load-more {
+				opacity: 0;
+			}
+		}
+	}
+
+	.ct-load-more {
+		z-index: 2;
+		opacity: 1;
+	}
+
+	.ct-last-page-text {
+		display: none;
+		align-items: center;
+		min-height: inherit;
+		font-size: 15px;
+		opacity: 0.7;
+	}
+
+	&.ct-last-page {
+		.ct-load-more, [data-loader] {
+			display: none;
+		}
+
+		.ct-last-page-text {
+			display: flex;
+		}
+	}
+}

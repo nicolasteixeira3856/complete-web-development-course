@@ -1,0 +1,14 @@
+.admin-bar {
+	@media screen and (max-width: 782px) {
+		--admin-bar: 46px;
+	}
+
+	@media screen and (min-width: 783px) {
+		--admin-bar: 32px;
+	}
+
+	#offcanvas,
+	#search-modal {
+		top: var(--admin-bar) !important;
+	}
+}

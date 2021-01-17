@@ -1,0 +1,79 @@
+.cross-sells,
+.upsells {
+
+  @include font-smooth();
+
+  h2 {
+    color: $color-secondary;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+  }
+  .product:hover > .card > .card-image {
+    @include no-box-shadow();
+    @include no-transform();
+    opacity: .75;
+  }
+  .product {
+
+    .card-product {
+      background: transparent;
+
+      .card-image {
+        @include no-box-shadow();
+      }
+
+      .content .card-title {
+        color: $color-secondary;
+      }
+
+      .card-description {
+        display: none;
+      }
+
+      .content .footer .stats .tooltip .tooltip-arrow:before {
+        border-top: 11px solid #FFFFFF;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        left: -8px;
+        right: auto;
+        top: -12px;
+        margin-left: -3px;
+        content: "";
+        border-width: 10px 11px 0;
+        border-top-color: #fff;
+        position: absolute;
+      }
+      .content .footer .stats .tooltip .tooltip-arrow {
+        border-top: 11px solid rgba(0, 0, 0, 0.2);
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        right: auto;
+        margin-right: 0;
+        top: 43px;
+        position: absolute;
+        display: block;
+        width: 5px;
+        height: 5px;
+        bottom:0;
+      }
+      .content .footer .stats .tooltip .tooltip-inner {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+        color: #66615B;
+        max-width: 200px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .content .footer .stats {
+        z-index: 100;
+      }
+    }
+  }
+
+}

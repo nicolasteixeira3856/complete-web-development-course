@@ -1,0 +1,16 @@
+.search-no-results {
+
+	.ct-container > section {
+		padding: 70px 0;
+	}
+
+	.hero-section {
+		--alignment: center;
+	}
+
+	.search-form {
+		margin: 0 auto;
+		max-width: 450px;
+		--linkInitialColor: var(--color);
+	}
+}

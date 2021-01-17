@@ -1,0 +1,36 @@
+.woocommerce-checkout {
+
+  @include font-smooth();
+
+  .hestia-title {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+
+  #hestia-checkout-coupon .button {
+    @include no-box-shadow();
+    @include border-radius(5px);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 11px 10px
+  }
+  #hestia-checkout-coupon .button:hover {
+    opacity: 0.75;
+  }
+
+  #payment #place_order {
+    @include no-box-shadow();
+    @include border-radius(5px);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 11px 10px;
+  }
+  #payment #place_order:hover {
+    opacity: 0.75;
+  }
+}

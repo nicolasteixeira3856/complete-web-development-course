@@ -1,0 +1,12 @@
+.wp-block-table th {
+	font-weight: 700;
+	text-align: inherit;
+
+	&.has-text-align-center {
+		text-align: center;
+	}
+
+	&.has-text-align-right {
+		text-align: right;
+	}
+}

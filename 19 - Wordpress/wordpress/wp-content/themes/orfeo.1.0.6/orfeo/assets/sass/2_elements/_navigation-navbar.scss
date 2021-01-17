@@ -1,0 +1,61 @@
+.title-logo-wrapper {
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+
+  a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+
+.navbar .navbar-collapse > .navbar-nav > li.menu-item {
+
+  @include no-box-shadow();
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+
+  > a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+#main-navigation ul.nav > li.btn.btn-primary {
+  a {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+#main-navigation ul.nav > li.btn.btn-primary:hover {
+  opacity: 0.75;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
+/* Very top bar */
+.hestia-top-bar {
+  .quantity,
+  .woocommerce-mini-cart__total,
+  .woocommerce-Price-amount {
+    color: #ffffff;
+  }
+}
+
+/* Button in main menu with accent_color */
+.btn.btn-primary {
+  @include border-radius(30px);
+  @include no-box-shadow();
+}
+.btn.btn-primary:hover {
+  @include no-box-shadow();
+}

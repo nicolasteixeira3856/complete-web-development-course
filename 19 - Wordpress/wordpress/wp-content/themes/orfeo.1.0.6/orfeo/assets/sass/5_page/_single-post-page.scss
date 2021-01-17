@@ -1,0 +1,79 @@
+.single-post {
+
+  .related-posts {
+
+    font-family: inherit;
+
+    .hestia-title {
+      color: $color-secondary;
+      font-size: 39px;
+      font-weight: 300;
+      line-height: 41px;
+    }
+
+    .card-blog {
+
+      @include no-box-shadow();
+      @include border-radius(12px);
+      background-color: #fff;
+      margin: 5px 0 20px;
+      text-align: center;
+
+      .card-image {
+        @include no-box-shadow();
+        -webkit-border-radius: 12px;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius: 12px;
+        -moz-border-radius-bottomright: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-radius: 12px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        margin: 0;
+
+        a {
+          @include border-radius(0);
+
+          img {
+            @include border-radius(0);
+          }
+        }
+      }
+
+      .content {
+
+        @include no-box-shadow();
+        text-align: left;
+        padding: 20px;
+
+        .category {
+          font-family: inherit;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 18px;
+          padding: 10px 0 0;
+          margin: 0;
+        }
+
+        .card-title {
+          color: $color-secondary;
+          font-family: inherit;
+          font-size: 19px;
+          font-weight: 300;
+          line-height: 26px;
+          margin: 5px 0 0;
+        }
+
+        .card-description {
+          color: #9A9A9A;
+          font-family: inherit;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 22px;
+          margin: 15px 0 5px;
+        }
+      }
+    }
+  }
+}

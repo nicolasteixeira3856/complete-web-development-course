@@ -1,0 +1,43 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin no-box-shadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin no-transform() {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+@mixin font-smooth() {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin no-font-smooth() {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+}
+
+@mixin widgets-button() {
+  @include no-box-shadow();
+  @include border-radius(30px);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 8px 18px
+}
+@mixin widgets-button-hover() {
+  @include no-box-shadow();
+  opacity: 0.75;
+}

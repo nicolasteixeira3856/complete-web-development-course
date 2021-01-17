@@ -1,0 +1,778 @@
+# Copyright (C) 2020 learnmore
+# This file is distributed under the same license as the learnmore package.
+msgid ""
+msgstr ""
+"Project-Id-Version: learnmore\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: 1: comment count number, 2: title.
+#: ../comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: ../sidebar.php:15
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../sidebar.php:16
+msgid "Skip to footer"
+msgstr ""
+
+#: ../page-templates/knowledgebase.php:3, ../inc/theme-options/partials/knowledgebase/index.php:6
+msgid "Knowledgebase"
+msgstr ""
+
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../template-parts/content-none.php:44
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: ../template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../template-parts/content-page.php:24, ../template-parts/content.php:60, ../template-parts/content.php:30, ../template-parts/loops/layout-1.php:58, ../template-parts/singular/layout-1.php:26
+msgid "Pages:"
+msgstr ""
+
+#: ../template-parts/content.php:34, ../inc/functions/post-pagination.php:16, ../template-parts/singular/layout-1.php:30
+msgid "Page"
+msgstr ""
+
+#: ../inc/core/settings.php:44
+msgid "Primary"
+msgstr ""
+
+#: ../inc/core/theme-page.php:10, ../inc/core/theme-page.php:11
+msgid "LearnMore theme"
+msgstr ""
+
+#: ../inc/core/theme-page.php:24
+msgid "LearnMore"
+msgstr ""
+
+#: ../inc/core/theme-page.php:25
+msgid "LearnMore is a Knowledge Base theme that is minimal, elegant and modern. It allows you to create a top-notch solution for Knowledge Base, Customer Support System, FAQ, Helpdesk, Wiki, Link Portal or any type of online documentation. It's an ideal solution for providing support resource for your customers. It's also very user friendly and easy to use thanks to multiple customization options."
+msgstr ""
+
+#: ../inc/core/theme-page.php:30
+msgid "Read Full Documentation Before Start"
+msgstr ""
+
+#: ../inc/core/theme-page.php:31
+msgid "Please check our full documentation for detailed information on how to Setup and Use LearnMore."
+msgstr ""
+
+#: ../inc/core/theme-page.php:33
+msgid "View documentation"
+msgstr ""
+
+#: ../inc/core/theme-page.php:37, ../inc/core/theme-page.php:41
+msgid "Go to Customizer"
+msgstr ""
+
+#: ../inc/core/theme-page.php:38
+msgid "All Setting, Theme Options, Widgets and Menus are available via Customize screen. Have a quick look or start customization!"
+msgstr ""
+
+#: ../inc/core/theme-page.php:39
+msgid "(Make sure that you have Kirki plugin installed and active before you do so)"
+msgstr ""
+
+#: ../inc/core/widgets.php:20
+msgid "Main Sidebar"
+msgstr ""
+
+#: ../inc/core/widgets.php:22
+msgid "Add widgets here."
+msgstr ""
+
+#: ../inc/core/widgets.php:32
+msgid "Footer widget area 1"
+msgstr ""
+
+#: ../inc/core/widgets.php:34
+msgid "Add widgets here for footer widget area 1."
+msgstr ""
+
+#: ../inc/core/widgets.php:44
+msgid "Footer widget area 2"
+msgstr ""
+
+#: ../inc/core/widgets.php:46
+msgid "Add widgets here for footer widget area 2."
+msgstr ""
+
+#: ../inc/core/widgets.php:56
+msgid "Footer widget area 3"
+msgstr ""
+
+#: ../inc/core/widgets.php:58
+msgid "Add widgets here for footer widget area 3."
+msgstr ""
+
+#: ../inc/core/widgets.php:68
+msgid "Footer widget area 4"
+msgstr ""
+
+#: ../inc/core/widgets.php:70
+msgid "Add widgets here for footer widget area 4."
+msgstr ""
+
+#. translators: %s: Name of current post
+#: ../inc/functions/edit-link.php:17
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: ../inc/functions/post-pagination.php:14
+msgid "Previous page"
+msgstr ""
+
+#: ../inc/functions/post-pagination.php:15
+msgid "Next page"
+msgstr ""
+
+#. translators: Separates tags, categories, etc. when displaying a post.
+#: ../inc/functions/post-terms.php:32
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ""
+
+#: ../inc/functions/show-empty-content-guidelines.php:18
+msgid "This page is empty because this template ignores the default \"Uncategorized\" category."
+msgstr ""
+
+#: ../inc/functions/show-empty-content-guidelines.php:20
+msgid "Please add at least one additional category and assign at least one post to it."
+msgstr ""
+
+#: ../inc/functions/show-empty-content-guidelines.php:21
+msgid "(You are able to see this message only because you have \"admin\" capabilities)"
+msgstr ""
+
+#: ../inc/hooks/icons.php:57
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: ../inc/hooks/icons.php:62
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: ../inc/hooks/no-javascript.php:11
+msgid "This website works best with JavaScript enabled."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:386, ../inc/TGMPA/class-tgm-plugin-activation.php:827, ../inc/TGMPA/class-tgm-plugin-activation.php:2533, ../inc/TGMPA/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:387, ../inc/TGMPA/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:388, ../inc/TGMPA/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:937, ../inc/TGMPA/class-tgm-plugin-activation.php:934
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:1121, ../inc/TGMPA/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3517, ../inc/TGMPA/class-tgm-plugin-activation.php:3509
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3517, ../inc/TGMPA/class-tgm-plugin-activation.php:3509
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/TGMPA/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../template-parts/footer/footer-widgets.php:19
+msgid "Footer"
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: ../template-parts/footer/site-info.php:13
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../template-parts/header/primary-search.php:10, ../template-parts/header/primary-search.php:16, ../template-parts/header/secondary-search.php:6
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: ../template-parts/header/primary-search.php:21, ../template-parts/header/secondary-search.php:16
+msgctxt "submit button"
+msgid "Search for:"
+msgstr ""
+
+#: ../template-parts/header/secondary-search.php:10
+msgctxt "placeholder"
+msgid "Type to search..."
+msgstr ""
+
+#: ../template-parts/knowledgebase/layout-1.php:57
+msgid "View all articles →"
+msgstr ""
+
+#: ../template-parts/loops/layout-1.php:11
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../template-parts/menus/menu-primary.php:12
+msgid "Primary Menu"
+msgstr ""
+
+#: ../template-parts/menus/menu-primary.php:17
+msgid "Menu"
+msgstr ""
+
+#: ../template-parts/singular/layout-1.php:42
+msgid "Next "
+msgstr ""
+
+#: ../template-parts/singular/layout-1.php:43
+msgid "Next post:"
+msgstr ""
+
+#: ../template-parts/singular/layout-1.php:45
+msgid " Previous"
+msgstr ""
+
+#: ../template-parts/singular/layout-1.php:46
+msgid "Previous post:"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/header.php:8
+msgid "Show bottom bar under header?"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/header.php:20
+msgid "Show breadcrumbs?"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/header.php:39
+msgid "Show search field?"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/header.php:58, ../inc/theme-options/partials/singular/index.php:13
+msgid "Show article meta tags?"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/header.php:70
+msgid "Show article excerpt?"
+msgstr ""
+
+#: ../inc/theme-options/partials/archive-pages/index.php:8
+msgid "Archive Pages"
+msgstr ""
+
+#: ../inc/theme-options/partials/colors/header-colors.php:11
+msgid "Select your color scheme"
+msgstr ""
+
+#: ../inc/theme-options/partials/colors/index.php:6
+msgid "Colors"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:19
+msgid "Article orderby"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:25
+msgid "Date"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:26
+msgid "Modified date"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:27, ../inc/theme-options/partials/knowledgebase/categories.php:51
+msgid "Name"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:28, ../inc/theme-options/partials/knowledgebase/categories.php:54
+msgid "ID"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:29
+msgid "rand"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:30
+msgid "Comment count"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:37
+msgid "Article order"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:43, ../inc/theme-options/partials/knowledgebase/categories.php:67
+msgid "ASC"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:44, ../inc/theme-options/partials/knowledgebase/categories.php:68
+msgid "DESC"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/articles.php:51
+msgid "How many posts to show?"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:9
+msgid "Category options"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:27
+msgid "Show categories count"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:36
+msgid "Show category description"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:45
+msgid "Category orderby"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:52
+msgid "Count"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:53
+msgid "Slug"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/categories.php:61
+msgid "Category order"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/search.php:8
+msgid "Main heading content"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/search.php:10
+msgid "Hello, how can we help you today?"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/search.php:17
+msgid "Main form placeholder content"
+msgstr ""
+
+#: ../inc/theme-options/partials/knowledgebase/search.php:19
+msgid "Search the knowledge base..."
+msgstr ""
+
+#: ../inc/theme-options/partials/singular/index.php:7
+msgid "Single layouts"
+msgstr ""
+
+#: ../inc/theme-options/partials/singular/index.php:23
+msgid "Show article next/previous posts?"
+msgstr ""
+
+#: ../inc/theme-options/partials/typography/font-families.php:6
+msgid "Font families"
+msgstr ""
+
+#: ../inc/theme-options/partials/typography/font-families.php:13
+msgid "Please select your preferred main font"
+msgstr ""
+
+#: ../inc/theme-options/partials/typography/font-families.php:36
+msgid "Please select your preferred headings font"
+msgstr ""
+
+#: ../inc/theme-options/partials/typography/index.php:7
+msgid "Typography"
+msgstr ""

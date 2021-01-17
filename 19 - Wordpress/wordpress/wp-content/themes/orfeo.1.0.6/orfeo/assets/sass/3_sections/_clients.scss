@@ -1,0 +1,103 @@
+.hestia-testimonials {
+
+  @include font-smooth();
+
+  .hestia-title {
+    color: $color-secondary;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
+  }
+
+  .description {
+    color: #9A9A9A;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .hestia-testimonials-content {
+
+    margin: 30px 0 0;
+
+    .row:nth-of-type(2n+1) {
+
+      .col-md-4:nth-of-type(3n+1) .card-testimonial {
+        background-color: $color-success;
+      }
+      .col-md-4:nth-of-type(3n+2) .card-testimonial {
+        background-color: $color-warning;
+      }
+      .col-md-4:nth-of-type(3n+3) .card-testimonial {
+        background-color: $color-rose;
+      }
+    }
+
+    .row:nth-of-type(2n+2) {
+
+      .col-md-4:nth-of-type(3n+1) .card-testimonial {
+        background-color: $color-danger;
+      }
+      .col-md-4:nth-of-type(3n+2) .card-testimonial {
+        background-color: $color-primary;
+      }
+      .col-md-4:nth-of-type(3n+3) .card-testimonial {
+        background-color: $color-info;
+      }
+    }
+
+    .row .col-md-4 .card-testimonial .content {
+      .card-title, .category, .card-description {
+        color: #fff;
+      }
+    }
+
+    .card-testimonial {
+
+      text-align: left;
+      padding: 20px 20px 0;
+      -webkit-box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+      -moz-box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+      box-shadow: 0 6px 10px -4px rgba( 0, 0, 0, 0.15 );
+      -webkit-transition:  300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -moz-transition:  300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -ms-transition:  300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -o-transition:  300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      transition:  300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+
+      .card-avatar {
+
+        margin: 0;
+        max-width: 60px;
+        max-height: 60px;
+
+        img {
+          @include no-box-shadow();
+          margin: 0 0 -20px;
+        }
+      }
+
+      .content {
+
+        .card-title {
+          font-weight: 600;
+        }
+
+        .category {
+          font-weight: 300;
+        }
+
+        .card-description {
+          font-family: inherit;
+          font-weight: 300;
+        }
+      }
+    }
+    .card-testimonial:hover {
+      -webkit-box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
+      -moz-box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
+      box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
+    }
+  } /* End of .hestia-team-content */
+}

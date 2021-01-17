@@ -1,0 +1,161 @@
+.ct-header-search {
+	display: flex;
+	align-items: center;
+
+	a {
+		display: flex;
+		align-items: center;
+
+		svg {
+			flex-grow: 1;
+			width: var(--icon-size, 15px);
+			height: var(--icon-size, 15px);
+			fill: currentColor;
+		}
+	}
+}
+
+// Search modal form
+#search-modal {
+
+	form {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+
+		@include media-breakpoint-down (sm) {
+			max-width: 88%;
+		}
+
+		@include media-breakpoint-only (md) {
+			max-width: 90%;
+		}
+
+		@include media-breakpoint-up (lg) {
+			max-width: 800px;
+		}
+
+		&.ct-has-dropdown {
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+	}
+
+	.ct-search-input {
+		input[type="search"] {
+			@include media-breakpoint-down (sm) {
+				--formInputHeight: 70px;
+				--formFontSize: 22px;
+				--formPadding: 0;
+			}
+
+			@include media-breakpoint-up (md) {
+				--formInputHeight: 90px;
+				--formFontSize: 35px;
+				--formPadding: 0 50px 0 0;
+			}
+
+			border: 0;
+			border-radius: 0;
+			font-weight: 500;
+			color: var(--linkInitialColor);
+			letter-spacing: 0.03em;
+			background-color: transparent;
+		}
+
+		&:after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 1px;
+			background: var(--linkInitialColor);
+			left: 0;
+			bottom: 0;
+			opacity: 0.2;
+		}
+
+		.search-submit {
+			right: 0;
+			border-radius: 100%;
+			color: #fff;
+			background: var(--linkHoverColor);
+
+			@include media-breakpoint-down (sm) {
+				width: 40px;
+				height: 40px;
+				top: calc(50% - 20px);
+			}
+
+			@include media-breakpoint-up (md) {
+				width: 48px;
+				height: 48px;
+				top: calc(50% - 24px);
+			}
+
+			svg {
+				width: calc(100% / 3);
+				height: calc(100% / 3);
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		[data-loader] {
+			--loaderColor: #fff;
+		}
+	}
+}
+
+
+// Search modal results
+#search-modal {
+	.ct-search-results {
+		display: grid;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+
+		@include media-breakpoint-down (sm) {
+			margin-top: 25px;
+		}
+
+		@include media-breakpoint-up (md) {
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 35px;
+		}
+
+		.ct-search-item {
+			display: flex;
+			align-items: center;
+			font-size: 15px;
+			line-height: 1.5;
+			font-weight: 500;
+		}
+
+		.ct-image-container {
+			border-radius: 2px;
+			margin-right: 5%;
+
+			@include media-breakpoint-down (sm) {
+				flex: 0 0 15%;
+				max-width: 15%;
+			}
+
+			@include media-breakpoint-up (md) {
+				flex: 0 0 20%;
+				max-width: 20%;
+			}
+		}
+
+		// show more button
+		.ct-search-more {
+			grid-column: 1/-1;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	}
+}

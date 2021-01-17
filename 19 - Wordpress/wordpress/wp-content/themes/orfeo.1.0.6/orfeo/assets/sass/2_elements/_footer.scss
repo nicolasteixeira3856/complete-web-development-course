@@ -1,0 +1,24 @@
+.footer-big {
+
+  background-color: #252422;
+  @include font-smooth();
+
+  .footer-menu {
+    .page_item,
+    .page_item a {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 36px;
+      text-transform: none;
+    }
+  }
+
+  .copyright {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+}
